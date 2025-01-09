@@ -11,7 +11,7 @@ import requests  # Web scraping için
 from datetime import datetime  # Tarih ve saat bilgisi almak için
 
 # Pydub için geçici dosya dizinini ayarlayın
-os.environ["TMPDIR"] = "C:/Users/ayver/Desktop/proje/temp"
+os.environ["TMPDIR"] = "Bu dosya nerede olacaksa o klasörün adresini buraya girin"
 
 # Günlerin Türkçe karşılıkları
 days_in_turkish = {
@@ -67,13 +67,11 @@ def run_app(app_name):
     apps = {
         "not defteri": "notepad.exe",
         "hesap makinesi": "calc.exe",
-        "tarayıcı": r"C:\Users\ayver\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe",
+        "tarayıcı": r"Tarayıcınızın özellikler kısmında yazan adresini giriniz",
         "valorant": r"C:\Riot Games\Riot Client\RiotClientServices.exe",  # Valorant uygulamasının dosya yolu
         "cs go": "steam://rungameid/730",  # Counter Strike: Global Offensive
         "marvel": "steam://rungameid/2767030",  # Marvel Rivals
         "specter": "steam://rungameid/2507950",  # Specter Divide
-        "discord": r"C:\Users\ayver\AppData\Local\Discord\Update.exe --processStart Discord.exe",  # Discord uygulaması
-        "sniper": "com.epicgames.launcher://apps/3196925cb7ea45c3a9c47118e52a820e%3Af554c33320e4489880f9c640f487395f%3Af8b6cc851ab34f5f9f07654426dc2429?action=launch&silent=true",  # Epic Games URL
         # Bu listeye diğer uygulamaları ve oyunları ekleyebilirsiniz
     }
     app_path = apps.get(app_name.lower())
